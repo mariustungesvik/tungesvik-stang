@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy People | About</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGTAION GOES HERE -->
+        <div class="nav-wrapper">
+            <div class="nav-left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nav-right-side">
+                TUNGESVIK & STANG
+            </div>
+        </div>
+
+        <!-- ARTICLE SECTION GOES HERE -->
+        <div class="article-wrapper">
+            <div class="article-infographic">
+                <img src="images/infographics/article1.jpg" alt="">
+            </div>
+            <div class="article-summary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil error voluptatem assumenda saepe eum deserunt molestiae obcaecati nulla vero. Modi soluta corrupti nostrum dolorum reprehenderit deserunt voluptate error dolorem!
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil error voluptatem assumenda saepe eum deserunt molestiae obcaecati nulla vero. Modi soluta corrupti nostrum dolorum reprehenderit deserunt voluptate error dolorem!
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil error voluptatem assumenda saepe eum deserunt molestiae obcaecati nulla vero. Modi soluta corrupti nostrum dolorum reprehenderit deserunt voluptate error dolorem!
+            </div>
+        </div>
+
+
+        <!-- FOOTER GOES HERE -->
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-about">
+                    By students, for students. This page is a tool for individuals seeking to self-develop by increasing their knowledge. By summarizing relevant and up-to-date research in text-form and through infographics we make this easy for you!
+
+                </div>
+                <div class="footer-links">
+                    <ul>Quick links
+                        <li><a href="index.html" id="index-nav">Home</a></li>
+                        <li><a href="about.html" id="about-nav">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-some">
+                    <a href="https://linkedin.com/in/mariustungesvik" target="_blank"><img src="images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2020 &copy; Copyright Tungesvik & Stang. All Rights Reserved.
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+
+</html>

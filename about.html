@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy People | About</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGTAION GOES HERE -->
+        <div class="nav-wrapper">
+            <div class="nav-left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nav-right-side">
+                TUNGESVIK & STANG
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION GOES HERE -->
+        <div class="about-wrapper">
+            <div class="three-column-wrapper">
+      
+              <div class="profile-image-wrapper">
+                <img src="images/profilemarius.jpg">
+                <a href="https://www.linkedin.com/in/mariustungesvik/" target="_blank"><img src="images/linkedin.png" alt="linkedin"
+                   id="social-media-link"></a>
+              </div>
+      
+              <div class="profile-image-wrapper">
+                <img src="images/profilejulius.jpg">
+                <a href="https://www.linkedin.com/in/alexander-julius-stang/" target="_blank"><img src="images/linkedin.png" alt="linkedin"
+                   id="social-media-link"></a>
+              </div>
+      
+              <div class="about-content-wrapper">
+                <h1>Self-development is the shit!</h1>
+                <p>We want to make it easier for everyone interested in organizaitonal development and organizational psychology to stay
+                  up to date on the newest, relevant research within the field. Based on publications and research by some of the most
+                  recognized researchers, we summarize their articles and research through summaries and infographics.
+                   <!-- Dette har vi kanskje ikke lov til btw?... Koster penger med lisens-->
+                </p>
+      
+                <p>The summer of 2020 we both finished our Master of Science in Leadership and Organizational Psychology at BI Norwegian 
+                  Business School. We soon found out that we both were interested in organizational development and organizational 
+                  psychology in general. Both on the individual- and organizational level. We hope that we could help others with the same 
+                  interest as us to increase their knowledge and self-develop. 
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <!-- FOOTER GOES HERE -->
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-about">
+                    By students, for students. This page is a tool for individuals seeking to self-develop by increasing their knowledge. By summarizing relevant and up-to-date research in text-form and through infographics we make this easy for you!
+
+                </div>
+                <div class="footer-links">
+                    <ul>Quick links
+                        <li><a href="index.html" id="index-nav">Home</a></li>
+                        <li><a href="about.html" id="about-nav">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-some">
+                    <a href="https://linkedin.com/in/mariustungesvik" target="_blank"><img src="images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2020 &copy; Copyright Tungesvik & Stang. All Rights Reserved.
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+
+</html>

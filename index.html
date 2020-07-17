@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article mania | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGTAION GOES HERE -->
+        <div class="nav-wrapper">
+            <div class="nav-left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nav-right-side">
+                TUNGESVIK & STANG
+            </div>
+        </div>
+
+        <!-- PORTFOLIO CONTAINER GOES HERE -->
+        <div class="portfolio-items-wrapper">
+            <!-- PORTFOLIO ITEMS -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/infographics/article1.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle"><a href="article1.html">Article title goes here...</a></div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research2.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research3.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research4.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research5.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research6.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research7.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research8.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research9.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research10.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research11.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item-background" style="background-image:url(images/research12.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">Article title goes here...</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER GOES HERE -->
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-about">
+                    By students, for students. This page is a tool for individuals seeking to self-develop by increasing their knowledge. By summarizing relevant and up-to-date research in text-form and through infographics we make this easy for you!
+                </div>
+                <div class="footer-links">
+                    <ul>Quick links
+                        <li><a href="index.html" id="index-nav">Home</a></li>
+                        <li><a href="about.html" id="about-nav">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-some">
+                    <a href="https://linkedin.com/in/mariustungesvik" target="_blank"><img src="images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2020 &copy; Copyright Tungesvik & Stang. All Rights Reserved.
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+
+</html>
